@@ -10,7 +10,7 @@ sheet2 = wb2['CIA-1-Component 1']
 #    for cell in row:
 #        print(cell)
 
-for row in range(sheet., 23):
+for row in range(5, 23):
     found = False
     cell1 = sheet2.cell(row, 2)
     v = cell1.value

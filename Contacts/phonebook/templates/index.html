@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<div class="row">
+    {% for contact in contacts  %}
+    <div class="col">
+        <div class="card" style="width: 25rem;">
+            <div class="card-header">
+                {{ contact.firstName}} {{contact.lastName}}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Mobile Number : {{contact.countryCode}} {{contact.phoneNumber}}</h5>
+                <p class="card-text">Email : {{contact.email}}<br/>
+                    Date Of Birth : {{contact.dateOfBirth}}</p>
+                <a href="#" class="btn btn-primary btn-sm">Edit</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    {% endfor %}
+</div>
+{% endblock%}
