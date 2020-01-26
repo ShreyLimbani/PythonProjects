@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {%block content%}
-<div class="row">
+<div class="row" style="margin-left:5px">
     {% for contact in contacts  %}
     <div class="col">
         <div class="card" style="width: 25rem;">
@@ -9,14 +9,14 @@
                 {{ contact.firstName}} {{contact.lastName}}
             </div>
             <div class="card-body">
-                <h5 class="card-title">Mobile Number : {{contact.countryCode}} {{contact.phoneNumber}}</h5>
+                <h5 class="card-title">Mobile Number : {{contact.countryCode1}} {{contact.mobileNumber1}}</h5>
                 <p class="card-text">Email : {{contact.email}}<br/>
                     Date Of Birth : {{contact.dateOfBirth}}</p>
-                <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                <!-- <a href="" class="btn btn-primary btn-sm">Edit</a> -->
             </div>
         </div>
+        <br/>
     </div>
-    <br/>
     {% endfor %}
 </div>
 {% endblock%}

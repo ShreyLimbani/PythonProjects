@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d31347-bb73-4dc1-b6d2-bf9505055834" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PyShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PyShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
