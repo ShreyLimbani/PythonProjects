@@ -7,3 +7,7 @@ from .models import Contact
 def index(request):
     contacts = Contact.objects.all()
     return render(request, 'index.html', {'contacts': contacts})
+
+
+def add(request):
+    return render(request, 'add.html', {'contact': Contact})
