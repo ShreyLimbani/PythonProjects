@@ -1,18 +1,77 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form style="margin-left:10px; margin-right:10px" class="form-inline">
-  <div class="form-group mx-sm-3 mb-2">
-    First Name &nbsp;<input type="text" class="form-control" aria-describedby="emailHelp" name="fname">
-    &nbsp;<label >Last Name</label>&nbsp;
-    <input type="text" class="form-control" aria-describedby="emailHelp" name="lname">
-    <br/>&nbsp;&nbsp;&nbsp;
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>&nbsp;
-    <input type="password" class="form-control" id="exampleInputPassword1">&nbsp;
-  </div>
-  &nbsp;
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<!--Section: Contact v.2-->
+<section class="mb-4" style="margin-left:20px">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Add a new Contact</h2>
+    <!--Section description-->
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" >
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="firstName" name="firstName" class="form-control">
+                            <label for="firstName" class="">First Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="lastname" name="lastName" class="form-control">
+                            <label for="lastName" class="">Last Name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+              <br>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+
+                        <div class="md-form mb-0">
+                            <input type="text" id="mobileNumber1" name="mobileNumber1" class="form-control"></input>
+                            <label for="mobileNumber1">Mobile Number</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+                <br>
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Add</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+<!--Section: Contact v.2-->
 {% endblock %}
