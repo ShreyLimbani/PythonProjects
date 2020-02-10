@@ -12,7 +12,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" >
+            <form id="contact-form" name="contact-form" action="phonebook:add" method="post">
 
                 <!--Grid row-->
                 <div class="row">
@@ -35,7 +35,7 @@
 
                 </div>
 
-              <br>
+                <br>
                 <!--Grid row-->
                 <div class="row">
 
@@ -59,13 +59,18 @@
                             <label for="email" class="">Email</label>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control">
+                            <label for="dateOfBirth">Date of Birth</label>
+                        </div>
+                    </div>
                 </div>
 
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Add</a>
-            </div>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();" href="phonebook:add">Add</a>
             <div class="status"></div>
         </div>
         <!--Grid column-->
