@@ -40,7 +40,7 @@ def add(request):
                 contact.save()
 
                 # redirect to index
-                return HttpResponseRedirect('')
+                
 
     # No post data availabe, let's just show the page.
     else:
