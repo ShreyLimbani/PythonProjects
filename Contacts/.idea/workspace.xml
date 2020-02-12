@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5d31347-bb73-4dc1-b6d2-bf9505055834" name="Default Changelist" comment="">
+    <list default="true" id="e5d31347-bb73-4dc1-b6d2-bf9505055834" name="Default Changelist" comment="Made Changes To Add Page">
+      <change afterPath="$PROJECT_DIR$/phonebook/newcontact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/templates/new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/templates/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/templates/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySite/mysite/polls/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MySite/mysite/polls/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MySite/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../MySite/mysite/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580144882729</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Made Changes To Add Page">
+      <created>1581355983303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581355983303</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -92,10 +101,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Made Changes To Add Page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1580144881667">
+    <state x="275" y="28" key="#Intentions" timestamp="1581357459995">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1580144881667" />
+    <state x="275" y="28" key="#Intentions/0.0.1366.738@0.0.1366.738" timestamp="1581357459995" />
+    <state x="328" y="0" key="CommitChangelistDialog2" timestamp="1581358604470">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="328" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1581358604470" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1581355689703">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -108,10 +121,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1579885314536" />
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1580144886010">
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1581355992438">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1580144886010" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1581355992438" />
     <state x="492" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580144855682">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
