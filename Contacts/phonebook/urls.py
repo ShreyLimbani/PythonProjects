@@ -7,5 +7,7 @@ app_name = 'phonebook'
 urlpatterns = [
     path('', views.index, name='index'),
     path('new.html', views.new, name='new'),
-    url(r'^add/$', views.add, name='add')
+    path('edit.html', views.edit, name='edit'),
+    url(r'^add/$', views.add, name='add'),
+    url(r'^alter/$', views.alter, name='alter')
 ]

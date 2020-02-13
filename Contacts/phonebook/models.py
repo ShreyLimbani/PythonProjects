@@ -8,6 +8,9 @@ class ContactManager(models.Manager):
                               dateOfBirth=dateOfBirth)
         return contact
 
+    def getCon(self,mobileNumber1):
+        contact = self.get(mobileNumber1=mobileNumber1)
+        return contact
 
 class Contact(models.Model):
     firstName = models.CharField(max_length=25)
