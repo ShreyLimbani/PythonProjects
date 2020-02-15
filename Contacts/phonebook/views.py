@@ -2,6 +2,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from .models import Contact
 from .newcontact import ContactForm
+from django.views import generic
 
 
 def index(request):
@@ -48,8 +49,11 @@ def add(request):
     return render(request, 'new.html', {'form': form})
 
 
-def edit(request):
-    return render(request, 'edit.html', {'contact': Contact})
+class EditView(generic.edit.UpdateView):
+    template_name = 'edit.html'
+    model = Contact
+    fields = ['id']
+
 
 
 def alter(request):
@@ -82,4 +86,4 @@ def alter(request):
     # No post data availabe, let's just show the page.
     else:
         form = ContactForm()
-    return render(request, 'index.html', {'contact': Contact})
+    return render(request, 'edit.html', {'form': form})

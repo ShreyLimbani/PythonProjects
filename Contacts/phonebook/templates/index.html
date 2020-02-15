@@ -13,8 +13,7 @@
             <div class="card-header">
                 {{ contact.firstName}} {{contact.lastName}}
                 <button type="button" class="btn btn-default btn-sm" style="float: right;"
-                        onclick="window.location.href = '/phonebook/edit.html';" value="">
-
+                        onclick="window.location.href ='{% url 'phonebook:edit' contact.id %}';">
                     <i class="fa fa-pencil"></i>
                 </button>
             </div>

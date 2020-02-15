@@ -20,14 +20,14 @@
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="firstName" name="firstName" class="form-control" value="">
+                            <input type="text" id="firstName" name="firstName" class="form-control" value="{{contact.firstName}}">
                             <label for="firstName" class="">First Name</label>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="lastname" name="lastName" class="form-control">
+                            <input type="text" id="lastname" name="lastName" class="form-control" value="{{contact.lastName}}">
                             <label for="lastName" class="">Last Name</label>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="col-md-6">
 
                         <div class="md-form mb-0">
-                            <input type="text" id="mobileNumber1" name="mobileNumber1" class="form-control"></input>
+                            <input type="text" id="mobileNumber1" name="mobileNumber1" class="form-control" value="{{contact.mobileNumber1}}"></input>
                             <label for="mobileNumber1">Mobile Number</label>
                         </div>
 
@@ -55,26 +55,24 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
+                            <input type="text" id="email" name="email" class="form-control" value="{{contact.email}}">
                             <label for="email" class="">Email</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control">
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-control" value="{{contact.dateOfBirth}}">
                             <label for="dateOfBirth">Date of Birth</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="text-center text-md-left">
-                    <input type="submit" value="Edit">
+                    <input type="submit" value="Update">
                     <div class="status"></div>
                 </div>
-
-        <!--Grid column-->
             </form>
-    </div>
+        </div>
     </div>
 </section>
 
