@@ -34,6 +34,7 @@ def add(request):
                 contact = Contact.object.create_contact(
                     form.cleaned_data['firstName'],
                     form.cleaned_data['lastName'],
+                    form.cleaned_data['countryCode1'],
                     form.cleaned_data['mobileNumber1'],
                     form.cleaned_data['email'],
                     form.cleaned_data['dateOfBirth']
@@ -65,16 +66,22 @@ def alter(request):
         form = ContactForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            if Contact.object.filter(mobileNumber1=form.cleaned_data['mobileNumber1']).exists():
+            if False:
                 return render(request, template, {
                     'form': form,
                     'error_message': 'Phone Number already exists.'
                 })
             else:
                 # Create the user:
-                contact = Contact.object.get(mobileNumber1=form.cleaned_data['mobileNumber1'])
+                try:
+                    contact = Contact.object.get(mobileNumber1=form.cleaned_data['mobileNumber1'])
+                except Contact.DoesNotExist:
+                    print("Mobile Number Changed")
+                    contact = Contact.object.get(firstName=form.cleaned_data['firstName'])
+
                 contact.firstName = form.cleaned_data['firstName']
                 contact.lastName = form.cleaned_data['lastName']
+                contact.countryCode1 = '+91'
                 contact.email = form.cleaned_data['email']
                 contact.mobileNumber1 = form.cleaned_data['mobileNumber1']
                 contact.dateOfBirth = form.cleaned_data['dateOfBirth']

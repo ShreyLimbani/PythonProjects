@@ -3,8 +3,8 @@ from django.db import models
 
 # Create your models here.
 class ContactManager(models.Manager):
-    def create_contact(self, firstName, lastName, mobileNumber1, email, dateOfBirth):
-        contact = self.create(firstName=firstName, lastName=lastName, mobileNumber1=mobileNumber1, email=email,
+    def create_contact(self, firstName, lastName, countryCode1, mobileNumber1, email, dateOfBirth):
+        contact = self.create(firstName=firstName, lastName=lastName, countryCode1=countryCode1, mobileNumber1=mobileNumber1, email=email,
                               dateOfBirth=dateOfBirth)
         return contact
 
